@@ -6,8 +6,8 @@ Welcome to the Global Reporting Project! Abusix is revitalizing the Global Repor
 
 - [Description](#description)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Running the Examples](#running-the-examples)
+- [Prerequisites](#prerequisites)
+- [Running the Examples](#running-the-examples)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -27,23 +27,56 @@ Before running the examples, ensure you have the following prerequisites install
 
 ### Running the Examples
 
-1. **JavaScript**:
-   - Navigate to the `javascript` directory.
-   - Update your API key
-   - Install the required dependencies using `npm install`.
-   - Run the example script using `node post_request.js`.
+1.  **JavaScript**:
 
-2. **Python**:
-   - Navigate to the `python` directory.
-   - Update your API key
-   - Install the required dependencies using `pip install requests`.
-   - Run the example script using `python post_request.py`.
+- Navigate to the `javascript` directory.
+- Update your API key
+- Install the required dependencies using `npm install`.
+- Run the example script using `node post_request.js`.
 
-3. **Shell Script**:
-   - Navigate to the `sh shell` directory.
-   - Update your API key
-   - Make the shell script executable using `chmod +x post_request.sh`.
-   - Run the example script using `./post_request.sh`.
+2.  **Python**:
+
+- Navigate to the `python` directory.
+- Update your API key
+- Install the required dependencies using `pip install requests`.
+- Run the example script using `python post_request.py`.
+
+3.  **Shell Script**:
+
+- Navigate to the `sh shell` directory.
+- Update your API key
+- Make the shell script executable using `chmod +x post_request.sh`.
+- Run the example script using `./post_request.sh`.
+
+### Responses
+
+**Successful**:
+```  
+status: 201 Created
+{
+	"state": "success",
+	"id": "id-here"
+} 
+```
+
+**Incorrect API key**: 
+```  
+status: 403 Forbidden
+{
+	"state": "error",
+	"error": "permission denied"
+}
+```
+
+**Incorrectly formated XARF**:
+
+```  
+status: 400 Bad Request
+{
+	"state": "error",
+	"error": "validation failed"
+}
+```
 
 ## Contributing
 

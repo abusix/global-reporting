@@ -10,4 +10,10 @@
     
     `python post_request.py` 
     
-4.  **Expected Output**: You should see the response from the server printed in the terminal.
+4.  **Expected Outputs**: You should see one of the following responses from the server printed in the terminal.
+
+**Successful**: Response: {"state":"success","id":"id-here"}
+
+**Incorrect API key**: Response: {"state":"error","error":"permission denied"}
+
+**Incorrectly formated XARF**: Response: {"state":"error","error":"validation failed"}

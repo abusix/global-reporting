@@ -11,4 +11,10 @@
     
     `node post_request.js` 
     
-4.  **Expected Output**: You should see the response from the server printed in the terminal.
+4.  **Expected Outputs**: You should see one of the following responses from the server printed in the terminal.
+
+**Successful**: Response: { state: 'success', id: 'id-here' }
+
+**Incorrect API key**: Error: { status: 403, state: 'error', error: 'permission denied' }
+
+**Incorrectly formated XARF**: Error: { status: 400, state: 'error', error: 'validation failed' }

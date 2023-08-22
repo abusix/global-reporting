@@ -52,5 +52,5 @@ axios.post(url, data, { headers })
     console.log('Response:', response.data);
   })
   .catch(error => {
-    console.error('Error:', error.message);
+    console.error('Error:', {"status": error.response.status, ...error.response.data});
   });

@@ -47,7 +47,10 @@ headers = {
 }
 
 # Make the POST request using requests
-response = requests.post(url, json=data, headers=headers)
+try:
+    response = requests.post(url, json=data, headers=headers, timeout=10)
+except requests.exceptions.RequestException as e:
+    print('Error making the request:', e)
 
 # Print the response
 print('Response:', response.text)

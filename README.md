@@ -19,6 +19,8 @@ This project showcases examples of performing a POST request using different pro
 
 ### Prerequisites
 
+Follow this document to get your API key: https://docs.abusix.com/data-channels/5q9CV1FJbGR3vWZqVAYrqa/submitting-data-via-the-api-to-data-channels/aJPW14NYRRAQqsGDZnfA4w
+
 Before running the examples, ensure you have the following prerequisites installed:
 
 - Node.js and npm (for JavaScript)
